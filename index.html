@@ -7,7 +7,6 @@
     <title>TechCore Digital | Веб-разработка и IT-консалтинг</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Принудительная прокрутка к верху ДО загрузки страницы
         window.history.scrollRestoration = 'manual';
         window.onbeforeunload = function() {
             window.scrollTo(0, 0);
@@ -16,19 +15,19 @@
 </head>
 <body>
 
-    <!-- Навигационное меню -->
+    
     <header class="header" id="header">
         <nav class="nav">
             <div class="nav__logo">TechCore</div>
 
-            <!-- Burger Menu для мобильных -->
+            
             <button class="nav__toggle" id="nav-toggle" aria-label="Открыть меню">
                 <span class="nav__toggle-line"></span>
                 <span class="nav__toggle-line"></span>
                 <span class="nav__toggle-line"></span>
             </button>
 
-            <!-- Навигационное меню -->
+            
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="#home" class="nav__link">Главная</a>
@@ -48,7 +47,7 @@
 
     <main class="main">
 
-        <!-- Hero Section -->
+        
         <section class="hero" id="home">
             <div class="hero__container container">
                 <h1 class="hero__title">Разработка для роста бизнеса</h1>
@@ -57,18 +56,18 @@
                 </p>
                 <a href="#contact" class="btn btn--primary">Обсудить проект</a>
             </div>
-            <!-- Декоративный градиент фон -->
+            
             <div class="hero__background"></div>
         </section>
 
-        <!-- Секция Услуги -->
+        
         <section class="services" id="services">
             <div class="container">
                 <h2 class="section__title">Специализация</h2>
                 <p class="section__subtitle">Технологии, которыми владеем на экспертном уровне</p>
 
                 <div class="services__grid">
-                    <!-- Карточка 1 -->
+                    
                     <article class="service-card animate-on-scroll">
                         <div class="service-card__icon">
                             <div class="icon-gradient icon-gradient--1"></div>
@@ -79,7 +78,7 @@
                         </p>
                     </article>
 
-                    <!-- Карточка 2 -->
+                    
                     <article class="service-card animate-on-scroll">
                         <div class="service-card__icon">
                             <div class="icon-gradient icon-gradient--2"></div>
@@ -90,7 +89,7 @@
                         </p>
                     </article>
 
-                    <!-- Карточка 3 -->
+                    
                     <article class="service-card animate-on-scroll">
                         <div class="service-card__icon">
                             <div class="icon-gradient icon-gradient--3"></div>
@@ -104,7 +103,7 @@
             </div>
         </section>
 
-        <!-- Секция О компании -->
+        
         <section class="about" id="about">
             <div class="container">
                 <div class="about__content animate-on-scroll">
@@ -135,7 +134,7 @@
             </div>
         </section>
 
-        <!-- Секция Контакты с формой -->
+        
         <section class="contact" id="contact">
             <div class="container">
                 <h2 class="section__title">Обсудим проект</h2>
@@ -188,7 +187,7 @@
 
     </main>
 
-    <!-- Footer -->
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -204,7 +203,7 @@
         </div>
     </footer>
 
-    <!-- Модальное окно успеха -->
+    
     <div class="modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal__overlay" id="modal-overlay"></div>
         <div class="modal__content">
