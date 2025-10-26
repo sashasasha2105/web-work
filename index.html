@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Разработка веб-приложений и корпоративных систем для бизнеса">
+    <title>TechCore Digital | Веб-разработка и IT-консалтинг</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Принудительная прокрутка к верху ДО загрузки страницы
+        window.history.scrollRestoration = 'manual';
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">TechCore</div>
+
+            <!-- Burger Menu для мобильных -->
+            <button class="nav__toggle" id="nav-toggle" aria-label="Открыть меню">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+
+            <!-- Навигационное меню -->
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Услуги</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">О компании</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <h1 class="hero__title">Разработка для роста бизнеса</h1>
+                <p class="hero__description">
+                    Создаём высоконагруженные веб-системы и корпоративные порталы, которые работают без сбоев
+                </p>
+                <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+            </div>
+            <!-- Декоративный градиент фон -->
+            <div class="hero__background"></div>
+        </section>
+
+        <!-- Секция Услуги -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section__title">Специализация</h2>
+                <p class="section__subtitle">Технологии, которыми владеем на экспертном уровне</p>
+
+                <div class="services__grid">
+                    <!-- Карточка 1 -->
+                    <article class="service-card animate-on-scroll">
+                        <div class="service-card__icon">
+                            <div class="icon-gradient icon-gradient--1"></div>
+                        </div>
+                        <h3 class="service-card__title">Full-stack разработка</h3>
+                        <p class="service-card__description">
+                            Node.js, Python, PostgreSQL, Redis. Архитектура микросервисов и RESTful API для масштабируемых решений
+                        </p>
+                    </article>
+
+                    <!-- Карточка 2 -->
+                    <article class="service-card animate-on-scroll">
+                        <div class="service-card__icon">
+                            <div class="icon-gradient icon-gradient--2"></div>
+                        </div>
+                        <h3 class="service-card__title">Frontend инжиниринг</h3>
+                        <p class="service-card__description">
+                            React, TypeScript, WebSockets. Производительные SPA с оптимизацией Core Web Vitals и кроссбраузерной совместимостью
+                        </p>
+                    </article>
+
+                    <!-- Карточка 3 -->
+                    <article class="service-card animate-on-scroll">
+                        <div class="service-card__icon">
+                            <div class="icon-gradient icon-gradient--3"></div>
+                        </div>
+                        <h3 class="service-card__title">DevOps & автоматизация</h3>
+                        <p class="service-card__description">
+                            Docker, CI/CD, мониторинг. Настройка инфраструктуры для непрерывной разработки и стабильного деплоя
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция О компании -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__content animate-on-scroll">
+                    <h2 class="section__title">О нас</h2>
+                    <p class="about__text">
+                        С 2018 года разрабатываем системы для финтеха, e-commerce и SaaS-стартапов.
+                        Работаем с клиентами из России, Европы и США — от MVP до поддержки продакшена.
+                    </p>
+                    <p class="about__text">
+                        Не используем готовые шаблоны. Пишем чистый код, делаем code review,
+                        покрываем тестами критичные модули. Работаем по Agile — спринтами с регулярными демо.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat-item">
+                            <div class="stat-item__number">47</div>
+                            <div class="stat-item__label">Запущенных проектов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-item__number">12</div>
+                            <div class="stat-item__label">Месяцев средняя поддержка</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-item__number">6</div>
+                            <div class="stat-item__label">Лет на рынке</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Контакты с формой -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Обсудим проект</h2>
+                <p class="section__subtitle">Ответим в течение 2 часов в рабочее время</p>
+
+                <form class="contact-form animate-on-scroll" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-input"
+                            required
+                            aria-required="true"
+                        >
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            required
+                            aria-required="true"
+                        >
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-input form-textarea"
+                            rows="5"
+                            required
+                            aria-required="true"
+                        ></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">Отправить сообщение</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">TechCore Digital</h3>
+                    <p class="footer__description">Разработка веб-систем и автоматизация бизнес-процессов</p>
+                </div>
+
+                <div class="footer__contacts">
+                    <h4 class="footer__subtitle">Контакты</h4>
+                    <p class="footer__contact-item">Email: hello@techcore.digital</p>
+                    <p class="footer__contact-item">Telegram: @techcore_dev</p>
+                    <p class="footer__contact-item">Москва, Пресненская наб., 12</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2018-2025 TechCore Digital. ИНН 7704358642</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно успеха -->
+    <div class="modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close" aria-label="Закрыть">
+                &times;
+            </button>
+            <div class="modal__icon">
+                <div class="success-checkmark">
+                    <div class="check-icon">✓</div>
+                </div>
+            </div>
+            <h3 class="modal__title" id="modal-title">Сообщение отправлено</h3>
+            <p class="modal__text">Ответим в течение 2 часов в рабочее время (пн-пт, 10:00-19:00 МСК)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
