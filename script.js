@@ -8,46 +8,9 @@
     'use strict';
 
     /* ===================================
-       БЛОКИРОВКА ЗУМА БРАУЗЕРА
+       СТАТИЧЕСКИЙ САЙТ
+       Чистый HTML/CSS/JS без фреймворков
        =================================== */
-
-    /**
-     * Блокирует зум браузера через keyboard events
-     */
-    function disableBrowserZoom() {
-        // Блокируем Cmd/Ctrl + Plus/Minus/0
-        document.addEventListener('keydown', function(e) {
-            if ((e.ctrlKey || e.metaKey) &&
-                (e.key === '+' || e.key === '-' || e.key === '=' || e.key === '0')) {
-                e.preventDefault();
-                return false;
-            }
-        }, { passive: false });
-
-        // Блокируем зум через колесико мыши
-        document.addEventListener('wheel', function(e) {
-            if (e.ctrlKey || e.metaKey) {
-                e.preventDefault();
-                return false;
-            }
-        }, { passive: false });
-
-        // Блокируем pinch-to-zoom на трекпаде
-        document.addEventListener('gesturestart', function(e) {
-            e.preventDefault();
-        }, { passive: false });
-
-        document.addEventListener('gesturechange', function(e) {
-            e.preventDefault();
-        }, { passive: false });
-
-        document.addEventListener('gestureend', function(e) {
-            e.preventDefault();
-        }, { passive: false });
-    }
-
-    // Запускаем блокировку зума
-    disableBrowserZoom();
 
     /* ===================================
        УТИЛИТЫ
