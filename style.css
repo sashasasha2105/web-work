@@ -9,7 +9,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -104,6 +103,9 @@ body {
     z-index: 1000;
     -webkit-perspective: 1000;
     perspective: 1000;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .nav {
